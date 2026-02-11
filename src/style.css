@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.consultation-card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition:
+    box-shadow 120ms ease,
+    transform 120ms ease;
+}
+
+.consultation-card:hover {
+  box-shadow: var(--mantine-shadow-sm);
+  transform: translateY(-2px);
+}
+
+.consultation-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  pointer-events: none;
+  transition: background-color 120ms ease;
+}
+
+.consultation-card:hover::after {
+  background-color: rgba(24, 100, 171, 0.05); /* overlay azul bem claro */
+}
+
+.consultation-card--highlight {
+  background-color: rgba(24, 100, 171, 0.1);
+}
+
