@@ -178,7 +178,7 @@ export function DashboardPage() {
 
   return (
     <Container fluid px={0} pt={0} pb="md">
-      <Stack gap={{ base: 'md', md: 'xl' }}>
+      <Stack gap="xl">
         <SimpleGrid
           cols={{ base: 1, md: 2, lg: 4 }}
           spacing={{ base: 'sm', md: 'md' }}
@@ -217,7 +217,7 @@ export function DashboardPage() {
           />
         </SimpleGrid>
 
-        <Card withBorder radius="md" padding={{ base: 'md', md: 'lg' }}>
+        <Card withBorder radius="md" padding="lg">
           <Stack gap="md">
             <Stack gap={4}>
               <Title order={3}>Consultas da Semana</Title>
@@ -256,7 +256,7 @@ export function DashboardPage() {
           </Stack>
         </Card>
 
-        <Card withBorder radius="md" padding={{ base: 'md', md: 'lg' }}>
+        <Card withBorder radius="md" padding="lg">
           <Stack gap="md">
             <Stack gap={4}>
               <Title order={3}>Consultas de Hoje</Title>
@@ -356,7 +356,7 @@ export function DashboardPage() {
           </Stack>
         </Card>
 
-        <Card withBorder radius="md" padding={{ base: 'md', md: 'lg' }}>
+        <Card withBorder radius="md" padding="lg">
           <Stack gap="md">
             <Group justify="space-between" align="flex-start">
               <Stack gap={4}>
