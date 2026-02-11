@@ -149,7 +149,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 **Felipe Moretti**
 
 - GitHub: [@fehmoretti](https://github.com/fehmoretti)
-- Email: felipemoretti@gmail.com
+- Linkedin: [Felipe Morettti](https://www.linkedin.com/in/felipemoretti)
 
 ## 🙏 Agradecimentos
 
