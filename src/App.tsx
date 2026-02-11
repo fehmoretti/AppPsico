@@ -41,9 +41,7 @@ export default function App() {
       ? computedColorScheme === 'dark'
         ? 'var(--mantine-color-blue-9)'
         : 'var(--mantine-color-blue-6)'
-      : computedColorScheme === 'dark'
-      ? 'var(--mantine-color-dark-6)'
-      : '#ffffff',
+      : 'transparent',
     color: isActive
       ? '#ffffff'
       : computedColorScheme === 'dark'
@@ -59,9 +57,9 @@ export default function App() {
       ? computedColorScheme === 'dark'
         ? '0 4px 8px rgba(34, 139, 230, 0.4)'
         : '0 4px 8px rgba(34, 139, 230, 0.3)'
-      : computedColorScheme === 'dark'
-      ? '0 2px 6px rgba(0, 0, 0, 0.45)'
-      : '0 2px 4px rgba(0, 0, 0, 0.12)',
+      : 'none',
+    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+    transform: isActive ? 'scale(1.05)' : 'scale(1)',
   });
 
   return (
@@ -161,7 +159,7 @@ export default function App() {
               </Stack>
             ) : (
               <Stack gap="md" align="center">
-                <ActionIcon variant="subtle" aria-label="Home">
+                <ActionIcon variant="light" color="blue" aria-label="Home">
                   <IconHome size={18} />
                 </ActionIcon>
                 <ActionIcon variant="subtle" aria-label="Cadastros">
@@ -173,15 +171,6 @@ export default function App() {
                 <ActionIcon variant="subtle" aria-label="Financeiro">
                   <IconCurrencyDollar size={18} />
                 </ActionIcon>
-                <Avatar
-                  radius="xl"
-                  size={32}
-                  variant="light"
-                  color="blue"
-                  aria-label="Perfil"
-                >
-                  <IconUser size={18} />
-                </Avatar>
               </Stack>
             )}
 
